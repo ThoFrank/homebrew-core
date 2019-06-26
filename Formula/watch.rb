@@ -28,6 +28,7 @@ class Watch < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--disable-nls"
+                          "--enable-watch8bit"
     system "make", "watch"
     bin.install "watch"
     man1.install "watch.1"
